@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header>
+    <header className='fixed w-full'>
       <nav className='flex justify-between items-center px-10 py-8'>
         <Link href='/'>
           <Image
