@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 50%;
+
+  @media screen and (min-width: 500px) {
+    font-size: 70%;
+  }
+  @media screen and (min-width: 900px) {
+    font-size: 100%;
+  }
+}
+
 /* :root {
   --dark-navy: #020c1b;
   --navy: #0a192f;
