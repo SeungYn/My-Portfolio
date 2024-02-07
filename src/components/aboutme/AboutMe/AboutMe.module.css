@@ -1,0 +1,21 @@
+.imgBorder > img {
+  transition: transform 0.3s;
+}
+
+.imgBorder > img:hover {
+  @apply -translate-x-4 -translate-y-4;
+}
+
+.imgBorder::after {
+  content: '';
+  display: block;
+  position: absolute;
+  inset: 0;
+  border: solid 2px;
+  transition: transform 0.3s;
+  @apply bg-navy translate-x-2 translate-y-2 border-green rounded-lg;
+}
+
+.imgBorder:hover::after {
+  @apply translate-x-4 translate-y-4;
+}
