@@ -1,0 +1,51 @@
+.tabBtn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-left: 2px solid;
+
+  @apply h-tab-height;
+  @apply px-6;
+  @apply border-light-navy;
+}
+
+.skillTabActiveter {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 2px;
+  transition: 0.3s;
+  @apply h-tab-height;
+  @apply bg-green;
+}
+
+.skillTabActiveter0 {
+  transform: translateY(calc(0 * theme('spacing.tab-height')));
+}
+
+.skillTabActiveter1 {
+  transform: translateY(calc(1 * theme('spacing.tab-height')));
+}
+
+.skillTabActiveter2 {
+  transform: translateY(calc(2 * theme('spacing.tab-height')));
+}
+
+.skillTabActiveter3 {
+  transform: translateY(calc(3 * theme('spacing.tab-height')));
+}
+
+.skillTabActiveter4 {
+  transform: translateY(calc(4 * theme('spacing.tab-height')));
+}
+
+.test {
+  width: 100px;
+  height: 20px;
+  background-color: red;
+  transition: 0.3s;
+}
+
+.testActive {
+  width: 300px;
+}

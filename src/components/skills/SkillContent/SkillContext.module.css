@@ -1,0 +1,40 @@
+.content {
+  position: absolute;
+}
+
+.contentFadeIn {
+  animation: aniFadeIn;
+  animation-fill-mode: both;
+  animation-duration: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.contentFadeOut {
+  visibility: hidden;
+  opacity: 0;
+  top: -9999px;
+  left: -9999px;
+  /* display: none; */
+}
+
+@keyframes aniFadeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* svg icon */
+
+.svg {
+  @apply w-16 h-16;
+}
