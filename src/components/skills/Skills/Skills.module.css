@@ -59,7 +59,7 @@
   transition: 0.3s;
 }
 
-@screen sm {
+@screen md {
   /* @apply bg-black; */
 
   .tabList {

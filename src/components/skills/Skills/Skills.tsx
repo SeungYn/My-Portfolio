@@ -22,7 +22,7 @@ export default function Skills() {
       count='02.'
       className='mx-0 md:mx-6 min-h-[500px]'
     >
-      <div className='flex flex-col md:flex-row'>
+      <div className='flex flex-col  md:flex-row '>
         <div className={styles.tabList}>
           {SkillCategoryList.map((obj) => (
             <button
@@ -41,7 +41,7 @@ export default function Skills() {
           ></div>
         </div>
 
-        <div className='w-full ml-8 relative '>
+        <div className='w-full ml-8 relative mt-6 md:mt-0'>
           <SkillContent categoryIndex={currentTitleIndex} />
         </div>
       </div>
