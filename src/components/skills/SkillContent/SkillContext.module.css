@@ -1,5 +1,4 @@
 .content {
-  position: absolute;
 }
 
 .contentFadeIn {
@@ -11,6 +10,7 @@
 
 .contentFadeOut {
   visibility: hidden;
+  display: none;
   opacity: 0;
   top: -9999px;
   left: -9999px;
