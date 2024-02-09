@@ -3,6 +3,8 @@
   margin-bottom: 3rem;
   align-items: center;
   gap: 10px;
+
+  @apply text-lightest-slate;
 }
 
 .sectionHeader::after {
