@@ -1,5 +1,5 @@
-import { PropsWithChildren } from 'react';
-import styles from './SectionContainer.module.css';
+import { PropsWithChildren } from "react";
+import styles from "./SectionContainer.module.css";
 
 type Props = {
   title: string;
@@ -13,10 +13,10 @@ export default function SectionContainer({
   className,
 }: PropsWithChildren<Props>) {
   return (
-    <section className={`${className ? className : ''} mb-8`}>
+    <section className={`${className ? className : ""} mb-8 py-24`}>
       <h2 className={`${styles.sectionHeader}`}>
-        <span className='text-xl text-green'>{count}</span>
-        <p className='text-3xl font-semibold'>{title}</p>
+        <span className="text-xl text-green">{count}</span>
+        <p className="text-3xl font-semibold">{title}</p>
       </h2>
       {children}
     </section>

@@ -14,6 +14,36 @@ html {
   }
 }
 
+a {
+  transition: 0.3s;
+
+  &:hover {
+    @apply text-green;
+  }
+}
+
+@layer components {
+  .basicShadow {
+    box-shadow: 0 10px 30px -15px theme("colors.navy-shadow");
+    transition: 0.3s;
+
+    &:hover,
+    &:focus-visible {
+      box-shadow: 0 20px 30px -15px theme("colors.navy-shadow");
+    }
+  }
+
+  .specialBtn {
+    @apply rounded-lg border border-green px-2 py-1 text-sm text-green transition-all;
+
+    &:hover,
+    &:focus-visible {
+      box-shadow: 4px 4px 0 0 theme("colors.green");
+      transform: translate(-5px, -5px);
+    }
+  }
+}
+
 /* :root {
   --dark-navy: #020c1b;
   --navy: #0a192f;
