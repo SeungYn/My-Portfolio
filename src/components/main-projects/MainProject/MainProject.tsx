@@ -47,7 +47,7 @@ export default function MainProject({
           ))}
         </ul>
         <div className={styles.projectLinks}>{linkList}</div>
-        <SpecialBtn className="mt-2" onClick={toggleIsOpen}>
+        <SpecialBtn className="z-20 mt-2" onClick={toggleIsOpen}>
           상세내용
         </SpecialBtn>
       </div>
