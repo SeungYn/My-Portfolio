@@ -1,5 +1,6 @@
 import Introduce from "@/components/Introduce/Introduce";
 import AboutMe from "@/components/aboutme/AboutMe/AboutMe";
+import Contact from "@/components/contact/Contact/Contact";
 import Header from "@/components/header/Header";
 import MainProjects from "@/components/main-projects/MainProjects/MainProjects";
 import Skills from "@/components/skills/Skills/Skills";
@@ -16,6 +17,7 @@ export default function Home() {
           <Skills />
           <MainProjects />
           <SubProjects />
+          <Contact />
         </div>
       </div>
     </main>

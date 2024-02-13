@@ -78,8 +78,6 @@ export default function SubProjects() {
           <Fragment key={i}>{projectInner(pro)}</Fragment>
         ))}
       </ul>
-
-      <a href="mailto:kwls0707@naver.com">안ㄹㄴ</a>
     </section>
   );
 }
