@@ -3,6 +3,7 @@ import AboutMe from "@/components/aboutme/AboutMe/AboutMe";
 import Header from "@/components/header/Header";
 import MainProjects from "@/components/main-projects/MainProjects/MainProjects";
 import Skills from "@/components/skills/Skills/Skills";
+import SubProjects from "@/components/sub-projects/SubProjects/SubProjects";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
           <AboutMe />
           <Skills />
           <MainProjects />
+          <SubProjects />
         </div>
       </div>
     </main>
