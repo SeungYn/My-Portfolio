@@ -3,6 +3,8 @@ import AboutMe from "@/components/aboutme/AboutMe/AboutMe";
 import Contact from "@/components/contact/Contact/Contact";
 import Header from "@/components/header/Header";
 import MainProjects from "@/components/main-projects/MainProjects/MainProjects";
+import SideEmail from "@/components/side/SideEmail/SideEmail";
+import SideSocial from "@/components/side/SideSocial/SideSocial";
 import Skills from "@/components/skills/Skills/Skills";
 import SubProjects from "@/components/sub-projects/SubProjects/SubProjects";
 
@@ -20,6 +22,8 @@ export default function Home() {
           <Contact />
         </div>
       </div>
+      <SideSocial />
+      <SideEmail />
     </main>
   );
 }
