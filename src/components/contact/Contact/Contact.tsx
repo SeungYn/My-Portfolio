@@ -1,6 +1,7 @@
 'use client';
 
 import SpecialBtn from '@/components/common/button/SpecialBtn';
+import WithFadeUpTranslate from '@/components/container/WithFadeUpTranslate';
 import { postMail } from '@/service/client/mail';
 import { EmailDateType } from '@/types';
 import dynamic from 'next/dynamic';
@@ -68,22 +69,28 @@ export default function Contact() {
 
 	return (
 		<section className="flex flex-col items-center py-40">
-			<h2 className="mb-8 text-3xl font-semibold text-lightest-slate">
-				Contact
-			</h2>
-			<p className="mb-14 text-lg">
-				저와 함께 작업하고 싶거나, 더 많은 정보를 원하신다면 언제든지
-				연락주세요. 새로운 기회를 기다리고 있습니다!
-			</p>
-			<SpecialBtn
-				className="px-6 py-4 text-xl"
-				onClick={() => {
-					dialog.current?.showModal();
-					setIsSuccessSend(false);
-				}}
-			>
-				Send Mail!
-			</SpecialBtn>
+			<WithFadeUpTranslate>
+				<h2 className="mb-8 text-3xl font-semibold text-lightest-slate">
+					Contact
+				</h2>
+			</WithFadeUpTranslate>
+			<WithFadeUpTranslate delay={0.2}>
+				<p className="mb-14 text-lg">
+					저와 함께 작업하고 싶거나, 더 많은 정보를 원하신다면 언제든지
+					연락주세요. 새로운 기회를 기다리고 있습니다!
+				</p>
+			</WithFadeUpTranslate>
+			<WithFadeUpTranslate delay={0.4}>
+				<SpecialBtn
+					className="px-6 py-4 text-xl"
+					onClick={() => {
+						dialog.current?.showModal();
+						setIsSuccessSend(false);
+					}}
+				>
+					Send Mail!
+				</SpecialBtn>
+			</WithFadeUpTranslate>
 			<dialog
 				ref={dialog}
 				className="w-full max-w-3xl rounded-md border border-green bg-light-navy text-lightest-slate"
