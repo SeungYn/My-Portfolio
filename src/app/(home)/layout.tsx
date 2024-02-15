@@ -8,6 +8,7 @@ import 'prismjs/themes/prism-tomorrow.css';
 // used for rendering equations (optional)
 import 'katex/dist/katex.min.css';
 import Header from '@/components/header/Header';
+import { GoogleAnalytics } from '@/components/common/analytics/GoogleAnalytics';
 
 const nanum = Nanum_Gothic({
 	subsets: ['latin'],
@@ -45,10 +46,11 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="kr">
+		<html lang="ko">
 			<body
 				className={`${nanum.className} w-screen overflow-x-hidden bg-navy text-slate `}
 			>
+				<GoogleAnalytics />
 				<Header />
 				{children}
 			</body>
