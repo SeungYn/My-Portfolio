@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter } from 'next/font/google';
+import { Nanum_Gothic } from 'next/font/google';
 import './globals.css';
 // core styles shared by all of react-notion-x (required)
 import 'react-notion-x/src/styles.css';
@@ -9,10 +9,13 @@ import 'prismjs/themes/prism-tomorrow.css';
 
 // used for rendering equations (optional)
 import 'katex/dist/katex.min.css';
-import Head from 'next/head';
+
 import Header from '@/components/header/Header';
 
-const inter = Inter({ subsets: ['latin'] });
+const nanum = Nanum_Gothic({
+	subsets: ['latin'],
+	weight: ['400', '700', '800'],
+});
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -36,7 +39,7 @@ export default function RootLayout({
 	return (
 		<html lang="kr">
 			<body
-				className={`${inter.className} w-screen overflow-x-hidden bg-navy text-slate`}
+				className={`${nanum.className} w-screen overflow-x-hidden bg-navy text-slate `}
 			>
 				<Header />
 				{children}
