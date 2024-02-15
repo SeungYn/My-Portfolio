@@ -4,12 +4,13 @@ import styles from './AboutMe.module.css';
 
 import WithFadeUpTranslate from '@/components/container/WithFadeUpTranslate';
 import { getBase64 } from '@/util/blurData';
+import { SectionID } from '@/constant/sectionId';
 
 export default async function AboutMe() {
 	const base64Img = await getBase64('public/assets/sun.jpeg');
 
 	return (
-		<SectionContainer title="About Me" count="01.">
+		<SectionContainer title="About Me" count="01." id={SectionID.aboutMe}>
 			<WithFadeUpTranslate>
 				<div className="flex flex-col gap-8 md:flex-row">
 					<div className="basis-[70%]">

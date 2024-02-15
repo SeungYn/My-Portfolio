@@ -4,6 +4,7 @@ import {
 	ShareIcon,
 } from '@/components/common/icons/react-icons';
 import WithFadeUpTranslate from '@/components/container/WithFadeUpTranslate';
+import { SectionID } from '@/constant/sectionId';
 import { Fragment, ReactNode } from 'react';
 
 type SubProject = {
@@ -70,7 +71,10 @@ export default function SubProjects() {
 	};
 
 	return (
-		<section className="flex flex-col items-center gap-16 py-20">
+		<section
+			className="flex flex-col items-center gap-16 py-20"
+			id={SectionID.subProjects}
+		>
 			<WithFadeUpTranslate>
 				<h2 className="text-3xl font-semibold text-lightest-slate">
 					Sub Projects

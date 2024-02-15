@@ -2,6 +2,7 @@
 
 import SpecialBtn from '@/components/common/button/SpecialBtn';
 import WithFadeUpTranslate from '@/components/container/WithFadeUpTranslate';
+import { SectionID } from '@/constant/sectionId';
 import { postMail } from '@/service/client/mail';
 import { EmailDateType } from '@/types';
 import dynamic from 'next/dynamic';
@@ -68,7 +69,10 @@ export default function Contact() {
 	}, []);
 
 	return (
-		<section className="flex flex-col items-center py-40">
+		<section
+			className="flex flex-col items-center py-40"
+			id={SectionID.contact}
+		>
 			<WithFadeUpTranslate>
 				<h2 className="mb-8 text-3xl font-semibold text-lightest-slate">
 					Contact

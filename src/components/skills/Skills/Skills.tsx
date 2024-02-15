@@ -5,6 +5,7 @@ import styles from './Skills.module.css';
 import { useState } from 'react';
 import SkillContent from '../SkillContent/SkillContent';
 import WithFadeUpTranslate from '@/components/container/WithFadeUpTranslate';
+import { SectionID } from '@/constant/sectionId';
 
 export const SkillCategoryList = [
 	{ index: 0, title: 'Language', class: styles.skillTabActiveter0 },
@@ -22,6 +23,7 @@ export default function Skills() {
 			title="Skills"
 			count="02."
 			className="mx-0 min-h-[500px] md:mx-6"
+			id={SectionID.skills}
 		>
 			<WithFadeUpTranslate>
 				<div className="flex flex-col md:flex-row ">

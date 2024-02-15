@@ -4,7 +4,7 @@ import { GitHubIcon, ShareIcon } from '@/components/common/icons/react-icons';
 import Image from 'next/image';
 import MainProject from '../MainProject/MainProject';
 import { Project } from '@/types';
-import WithFadeUpCoordnate from '@/components/container/WithFadeUpCoordnate';
+import { SectionID } from '@/constant/sectionId';
 
 const PROJECT_DATA: Project[] = [
 	{
@@ -180,7 +180,11 @@ const PROJECT_DATA: Project[] = [
 
 export default function MainProjects() {
 	return (
-		<SectionContainer title="Main Projects" count="03.">
+		<SectionContainer
+			title="Main Projects"
+			count="03."
+			id={SectionID.mainProjects}
+		>
 			{PROJECT_DATA.map((pro, i) => (
 				<MainProject key={i} {...pro} />
 			))}
