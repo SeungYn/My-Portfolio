@@ -25,6 +25,7 @@ export const viewport: Viewport = {
 
 /* meta data */
 export const metadata: Metadata = {
+	metadataBase: new URL('https://seungyn.com'),
 	title: '프론트엔드 유승윤 | 포트폴리오',
 	description:
 		'프론트엔드 개발자 유승윤 포트폴리오, seungyn frontend portfolio',
