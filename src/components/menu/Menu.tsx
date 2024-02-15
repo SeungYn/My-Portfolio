@@ -65,25 +65,37 @@ export default function Menu() {
 			>
 				<nav>
 					<ol className="text-2xl">
-						<Link href="/">
+						<Link
+							href={`/#${SectionID.aboutMe}`}
+							onClick={() => setIsOpen(false)}
+						>
 							<li className="flex flex-col items-center px-8 py-4">
 								<span className="text-green">01.</span>
 								<p>About</p>
 							</li>
 						</Link>
-						<Link href="/">
+						<Link
+							href={`/#${SectionID.skills}`}
+							onClick={() => setIsOpen(false)}
+						>
 							<li className="flex flex-col items-center px-8 py-4">
 								<span className="text-green">02.</span>
 								<p>Skills</p>
 							</li>
 						</Link>
-						<Link href="/">
+						<Link
+							href={`/#${SectionID.mainProjects}`}
+							onClick={() => setIsOpen(false)}
+						>
 							<li className="flex flex-col items-center px-8 py-4">
 								<span className="text-green">03.</span>
 								<p>Projects</p>
 							</li>
 						</Link>
-						<Link href="/">
+						<Link
+							href={`/#${SectionID.contact}`}
+							onClick={() => setIsOpen(false)}
+						>
 							<li className="flex flex-col items-center px-8 py-4">
 								<span className="text-green">04.</span>
 								<p>Contact</p>
