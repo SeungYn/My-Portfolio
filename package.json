@@ -15,7 +15,6 @@
 	"dependencies": {
 		"@plaiceholder/next": "^3.0.0",
 		"framer-motion": "^11.0.3",
-		"i": "^0.3.7",
 		"next": "14.1.0",
 		"nodemailer": "^6.9.9",
 		"notion-client": "^6.16.0",
