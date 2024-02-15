@@ -24,7 +24,7 @@ const SUB_PROJECTS: SubProject[] = [
 				SeYn Portfolio
 			</a>
 		),
-		links: { git: 'test' },
+		links: { git: 'https://github.com/SeungYn/My-Portfolio' },
 		description: `<a href="https://github.com/bchiang7" target="_blank" style="color:#64ffda; z-index:30;">
     Brittany Chiang</a>의 포트폴리오 디자인을 참고하여 포트폴리오를 제작했습니다.`,
 		skills: ['NextJS v14', 'TailwindCSS', 'React-Notion-X'],

@@ -44,7 +44,11 @@ const PROJECT_DATA: Project[] = [
 		),
 
 		ImgComponent: (
-			<Link href={'https://emmerce1.duckdns.org/'} target="_blank">
+			<Link
+				href={'https://emmerce1.duckdns.org/'}
+				target="_blank"
+				className="relative"
+			>
 				<Image
 					src="/assets/project-images/emmerce-main.png"
 					fill
@@ -85,7 +89,11 @@ const PROJECT_DATA: Project[] = [
 		),
 
 		ImgComponent: (
-			<Link href={'https://poje-frontend.vercel.app/'} target="_blank">
+			<Link
+				href={'https://poje-frontend.vercel.app/'}
+				target="_blank"
+				className="relative"
+			>
 				<Image src="/assets/project-images/poje-main.png" fill alt="이미지" />
 			</Link>
 		),
@@ -133,6 +141,7 @@ const PROJECT_DATA: Project[] = [
 			<Link
 				href={'https://seungyn.github.io/capstonClientBySpring/'}
 				target="_blank"
+				className="relative"
 			>
 				<Image
 					src="/assets/project-images/babmate-main.png"
@@ -166,7 +175,11 @@ const PROJECT_DATA: Project[] = [
 		),
 
 		ImgComponent: (
-			<Link href={'https://hspackges.netlify.app/'} target="_blank">
+			<Link
+				href={'https://hspackges.netlify.app/'}
+				target="_blank"
+				className="relative"
+			>
 				<Image
 					src="/assets/project-images/hanshin-main.png"
 					fill
