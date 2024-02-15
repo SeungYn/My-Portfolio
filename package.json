@@ -1,6 +1,8 @@
 {
 	"name": "portfolio",
+	"description": "seungyn portfolio",
 	"version": "0.1.0",
+	"author": "seungyn kwls0407@gmail.com",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
