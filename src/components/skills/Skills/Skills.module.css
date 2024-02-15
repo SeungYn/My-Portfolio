@@ -1,120 +1,120 @@
 .tabList {
-  position: relative;
-  display: flex;
-  flex-shrink: 0;
-  overflow-x: auto;
-  width: calc(100% + 100px);
-  z-index: 3;
-  margin-left: -50px;
-  padding-left: 50px;
+	position: relative;
+	display: flex;
+	flex-shrink: 0;
+	overflow-x: auto;
+	width: calc(100% + 100px);
+	z-index: 3;
+	margin-left: -50px;
+	padding-left: 50px;
 }
 
 .tabBtn {
-  display: block;
-  border-bottom: 2px solid;
-  border-left: none;
-  @apply min-w-tab-width;
-  @apply py-6 px-0;
-  @apply border-light-navy;
+	display: block;
+	border-bottom: 2px solid;
+	border-left: none;
+	@apply min-w-tab-width;
+	@apply px-0 py-6;
+	@apply border-light-navy;
 }
 
 .skillTabActiveter {
-  left: 0;
-  bottom: 0;
-  top: auto;
-  height: 2px;
-  position: absolute;
-  transition: 0.3s;
-  margin-left: 50px;
-  @apply bg-green;
+	left: 0;
+	bottom: 0;
+	top: auto;
+	height: 2px;
+	position: absolute;
+	transition: 0.3s;
+	margin-left: 50px;
+	@apply bg-green;
 
-  @apply w-tab-width;
-  @apply bg-green;
+	@apply w-tab-width;
+	@apply bg-green;
 }
 
 .skillTabActiveter0 {
-  transform: translateX(calc(0 * theme('spacing.tab-width')));
+	transform: translateX(calc(0 * theme('spacing.tab-width')));
 }
 
 .skillTabActiveter1 {
-  transform: translateX(calc(1 * theme('spacing.tab-width')));
+	transform: translateX(calc(1 * theme('spacing.tab-width')));
 }
 
 .skillTabActiveter2 {
-  transform: translateX(calc(2 * theme('spacing.tab-width')));
+	transform: translateX(calc(2 * theme('spacing.tab-width')));
 }
 
 .skillTabActiveter3 {
-  transform: translateX(calc(3 * theme('spacing.tab-width')));
+	transform: translateX(calc(3 * theme('spacing.tab-width')));
 }
 
 .skillTabActiveter4 {
-  transform: translateX(calc(4 * theme('spacing.tab-width')));
+	transform: translateX(calc(4 * theme('spacing.tab-width')));
 }
 
 .test {
-  width: 100px;
-  height: 20px;
-  background-color: red;
-  transition: 0.3s;
+	width: 100px;
+	height: 20px;
+	background-color: red;
+	transition: 0.3s;
 }
 
 @screen md {
-  /* @apply bg-black; */
+	/* @apply bg-black; */
 
-  .tabList {
-    display: inline-block;
-    width: auto;
-  }
+	.tabList {
+		display: inline-block;
+		width: auto;
+	}
 
-  .tabBtn {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    border-left: 2px solid;
-    border-bottom: none;
+	.tabBtn {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		border-left: 2px solid;
+		border-bottom: none;
 
-    @apply h-tab-height;
-    @apply px-6 py-0;
-    @apply border-light-navy;
-  }
+		@apply h-tab-height;
+		@apply px-6 py-0;
+		@apply border-light-navy;
+	}
 
-  .skillTabActiveter {
-    top: 0;
-    left: 0;
-    bottom: auto;
-    position: absolute;
-    width: 2px;
-    transition: 0.3s;
-    @apply h-tab-height;
-    @apply bg-green;
-  }
+	.skillTabActiveter {
+		top: 0;
+		left: 0;
+		bottom: auto;
+		position: absolute;
+		width: 2px;
+		transition: 0.3s;
+		@apply h-tab-height;
+		@apply bg-green;
+	}
 
-  .skillTabActiveter0 {
-    transform: translateY(calc(0 * theme('spacing.tab-height')));
-  }
+	.skillTabActiveter0 {
+		transform: translateY(calc(0 * theme('spacing.tab-height')));
+	}
 
-  .skillTabActiveter1 {
-    transform: translateY(calc(1 * theme('spacing.tab-height')));
-  }
+	.skillTabActiveter1 {
+		transform: translateY(calc(1 * theme('spacing.tab-height')));
+	}
 
-  .skillTabActiveter2 {
-    transform: translateY(calc(2 * theme('spacing.tab-height')));
-  }
+	.skillTabActiveter2 {
+		transform: translateY(calc(2 * theme('spacing.tab-height')));
+	}
 
-  .skillTabActiveter3 {
-    transform: translateY(calc(3 * theme('spacing.tab-height')));
-  }
+	.skillTabActiveter3 {
+		transform: translateY(calc(3 * theme('spacing.tab-height')));
+	}
 
-  .skillTabActiveter4 {
-    transform: translateY(calc(4 * theme('spacing.tab-height')));
-  }
+	.skillTabActiveter4 {
+		transform: translateY(calc(4 * theme('spacing.tab-height')));
+	}
 
-  .test {
-    @apply bg-black;
-  }
+	.test {
+		@apply bg-black;
+	}
 }
 
 .testActive {
-  width: 300px;
+	width: 300px;
 }

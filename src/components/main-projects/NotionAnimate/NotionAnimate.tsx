@@ -19,7 +19,7 @@ export default function NotionAnimate({ isOpen, src, toggleIsOpen }: Props) {
 					onClick={toggleIsOpen}
 				>
 					<motion.section
-						className="max-w-screen-md:w-[90%]  h-[80%] w-[80%] bg-white max-md:w-[90%]"
+						className="  h-[80%] w-[80%] bg-white max-md:w-[90%]"
 						initial={{ translateY: '100%', opacity: 0.5, scale: 0.1 }}
 						animate={{ translateY: '0%', opacity: 1, scale: 1 }}
 						exit={{ translateY: '100%', opacity: 0.5, scale: 0.1 }}

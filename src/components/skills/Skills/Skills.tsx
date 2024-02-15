@@ -45,7 +45,7 @@ export default function Skills() {
 						></div>
 					</div>
 
-					<div className="relative ml-8  mt-6 w-full md:mt-0">
+					<div className="relative ml-8 mt-6 max-md:ml-0 md:mt-0">
 						<SkillContent categoryIndex={currentTitleIndex} />
 					</div>
 				</div>

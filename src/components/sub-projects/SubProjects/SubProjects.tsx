@@ -17,7 +17,7 @@ const SUB_PROJECTS: SubProject[] = [
 	{
 		title: (
 			<a
-				href="/f"
+				href="/"
 				target="_blank"
 				className="static before:absolute before:left-0 before:top-0 before:z-0 before:h-full before:w-full before:content-['']"
 			>

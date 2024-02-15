@@ -1,6 +1,7 @@
 'use client';
 import { GitHubIcon, GitlabIcon } from '@/components/common/icons/react-icons';
 import { FadeLeft } from '@/constant/framer-motion';
+import { Links } from '@/constant/link';
 import { motion } from 'framer-motion';
 
 export default function SideSocial() {
@@ -12,10 +13,10 @@ export default function SideSocial() {
 			variants={FadeLeft}
 		>
 			<div className="flex flex-col items-center gap-4 text-3xl [&_a:hover]:-translate-y-2">
-				<a href="https://github.com/SeungYn">
+				<a href={Links.github} target="_blank">
 					<GitHubIcon />
 				</a>
-				<a href="https://gitlab.com/commerce9235338/emmerce-web">
+				<a href={Links.gitlab} target="_blank">
 					<GitlabIcon />
 				</a>
 				<div className="h-[120px] w-[1px] bg-light-slate"></div>
