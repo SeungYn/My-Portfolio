@@ -8,7 +8,7 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 
 export default function Menu() {
 	const navContainerRef = useRef<HTMLDivElement>(null);
-	const [isOpen, setIsOpen] = useState(true);
+	const [isOpen, setIsOpen] = useState(false);
 	const onToggle = () => setIsOpen((t) => !t);
 
 	useOnClickOutside(
