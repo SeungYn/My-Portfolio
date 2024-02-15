@@ -5,11 +5,11 @@
 
 html {
 	scrollbar-width: 1px;
-
-	font-size: 50%;
+	scroll-behavior: smooth;
+	font-size: 80%;
 
 	@media screen and (min-width: 500px) {
-		font-size: 70%;
+		font-size: 90%;
 	}
 	@media screen and (min-width: 900px) {
 		font-size: 100%;
