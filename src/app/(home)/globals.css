@@ -4,52 +4,54 @@
 @tailwind variants;
 
 html {
-  font-size: 50%;
+	scrollbar-width: 1px;
 
-  @media screen and (min-width: 500px) {
-    font-size: 70%;
-  }
-  @media screen and (min-width: 900px) {
-    font-size: 100%;
-  }
+	font-size: 50%;
+
+	@media screen and (min-width: 500px) {
+		font-size: 70%;
+	}
+	@media screen and (min-width: 900px) {
+		font-size: 100%;
+	}
 }
 
 a {
-  transition: 0.3s;
+	transition: 0.3s;
 
-  &:hover {
-    @apply text-green;
-  }
+	&:hover {
+		@apply text-green;
+	}
 }
 
 input {
-  outline: none;
+	outline: none;
 }
 
 textarea {
-  outline: none;
+	outline: none;
 }
 
 @layer components {
-  .basicShadow {
-    box-shadow: 0 10px 30px -15px theme("colors.navy-shadow");
-    transition: 0.3s;
+	.basicShadow {
+		box-shadow: 0 10px 30px -15px theme('colors.navy-shadow');
+		transition: 0.3s;
 
-    &:hover,
-    &:focus-visible {
-      box-shadow: 0 20px 30px -15px theme("colors.navy-shadow");
-    }
-  }
+		&:hover,
+		&:focus-visible {
+			box-shadow: 0 20px 30px -15px theme('colors.navy-shadow');
+		}
+	}
 
-  .specialBtn {
-    @apply rounded-lg border border-green px-2 py-1 text-sm text-green transition-all;
+	.specialBtn {
+		@apply rounded-lg border border-green px-2 py-1 text-sm text-green transition-all;
 
-    &:hover:enabled,
-    &:focus-visible:enabled {
-      box-shadow: 4px 4px 0 0 theme("colors.green");
-      transform: translate(-5px, -5px);
-    }
-  }
+		&:hover:enabled,
+		&:focus-visible:enabled {
+			box-shadow: 4px 4px 0 0 theme('colors.green');
+			transform: translate(-5px, -5px);
+		}
+	}
 }
 
 /* :root {

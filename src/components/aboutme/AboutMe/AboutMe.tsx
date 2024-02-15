@@ -1,12 +1,13 @@
-'use client';
-
 import SectionContainer from '@/components/common/section/SectionContainer/SectionContainer';
 import Image from 'next/image';
 import styles from './AboutMe.module.css';
-import { useRef } from 'react';
-import WithFadeUpTranslate from '@/components/container/WithFadeUpTranslate';
 
-export default function AboutMe() {
+import WithFadeUpTranslate from '@/components/container/WithFadeUpTranslate';
+import { getBase64 } from '@/util/blurData';
+
+export default async function AboutMe() {
+	const base64Img = await getBase64('public/assets/sun.jpeg');
+
 	return (
 		<SectionContainer title="About Me" count="01.">
 			<WithFadeUpTranslate>
@@ -57,6 +58,8 @@ export default function AboutMe() {
 							fill
 							alt="프로필 이미지"
 							sizes="300px"
+							blurDataURL={base64Img}
+							placeholder="blur"
 							className="z-10 -translate-x-2 -translate-y-2 rounded-lg"
 						/>
 					</div>

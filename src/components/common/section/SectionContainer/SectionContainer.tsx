@@ -15,7 +15,7 @@ export default function SectionContainer({
 	className,
 }: PropsWithRef<PropsWithChildren<Props>>) {
 	return (
-		<section className={`${className ? className : ''} }  mb-8  py-24 `}>
+		<section className={`${className ? className : ''}  mb-8  py-24 `}>
 			<WithFadeUpTranslate>
 				<h2 className={`${styles.sectionHeader}  `}>
 					<span className="text-xl text-green ">{count}</span>
