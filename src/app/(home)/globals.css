@@ -18,7 +18,11 @@ html {
 	width: 12px;
 }
 
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar:horizontal {
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
 	background-color: theme('colors.navy');
 }
 
