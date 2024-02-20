@@ -55,7 +55,7 @@ export default async function AboutMe() {
 						className={`relative mx-auto aspect-square h-[300px] w-[300px] max-w-[300px]  md:!w-[70%]  ${styles.imgBorder}`}
 					>
 						<Image
-							src="/assets/sun.jpeg"
+							src="/assets/basic_profile_image.jpeg"
 							fill
 							alt="프로필 이미지"
 							sizes="300px"
