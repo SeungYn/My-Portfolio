@@ -5,6 +5,7 @@ import { BlogIcon, GitHubIcon, GitlabIcon } from '../common/icons/react-icons';
 import { motion } from 'framer-motion';
 import { FadeUp } from '@/constant/framer-motion';
 import { Links } from '@/constant/link';
+import { useAppSelector } from '@/hooks/useReactRedux';
 
 const ICONLIST = [
 	{ link: Links.tstory, ICON: <BlogIcon size={30} /> },
@@ -13,12 +14,15 @@ const ICONLIST = [
 ];
 
 export default function Introduce() {
+	const isFinishMainLoading = useAppSelector(
+		(s) => s.mainLoading.isFinshLoading
+	);
 	return (
 		<motion.section
 			className="flex h-screen flex-col justify-center"
 			initial="init"
-			animate="on"
-			transition={{ staggerChildren: 0.2, delayChildren: 0.6 }}
+			animate={isFinishMainLoading ? 'on' : 'init'}
+			transition={{ staggerChildren: 0.2, delayChildren: 1 }}
 		>
 			<motion.h1 className="pb-8 text-2xl text-green" variants={FadeUp}>
 				안녕하세요. 저는 웹 개발자
@@ -37,10 +41,8 @@ export default function Introduce() {
 				className="max-w-[580px] break-keep pb-8 text-xl"
 				variants={FadeUp}
 			>
-				현재는 프론트엔드 기술을 중심으로 심층적인 학습을 진행 중이며, 이를
-				토대로 사용자에게 먼저 다가갈 수 있는 웹사이트의 프론트엔드 부분을
-				담당하고 있습니다. 제 웹 포트폴리오를 방문해 주셔서 진심으로
-				감사드립니다.
+				사용자에게 먼저 다가갈 수 있는 웹사이트의 프론트엔드 부분을 담당하고
+				있습니다. 제 웹 포트폴리오를 방문해 주셔서 진심으로 감사드립니다.
 			</motion.p>
 
 			<motion.ol className="flex gap-4 text-green" variants={FadeUp}>
