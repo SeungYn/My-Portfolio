@@ -14,6 +14,7 @@
 	},
 	"dependencies": {
 		"@plaiceholder/next": "^3.0.0",
+		"@reduxjs/toolkit": "^2.2.7",
 		"framer-motion": "^11.0.3",
 		"next": "14.1.0",
 		"nodemailer": "^6.9.9",
@@ -25,6 +26,7 @@
 		"react-dom": "^18",
 		"react-icons": "^5.0.1",
 		"react-notion-x": "^6.16.0",
+		"react-redux": "^9.1.2",
 		"react-spinners": "^0.13.8",
 		"sharp": "^0.33.2"
 	},
