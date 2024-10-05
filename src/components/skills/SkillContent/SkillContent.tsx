@@ -46,7 +46,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<HTMLIcon className={styles.svg} />
+					<HTMLIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'HTML5',
@@ -55,7 +55,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<CSSIcon className={styles.svg} />
+					<CSSIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'CSS',
@@ -64,7 +64,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<JavscriptIcon className={styles.svg} />
+					<JavscriptIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'Javacript',
@@ -73,7 +73,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<TypescriptIcon className={styles.svg} />
+					<TypescriptIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'Typescript',
@@ -83,7 +83,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<JAVAIcon className={styles.svg} />
+					<JAVAIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'Java',
@@ -95,7 +95,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<ReactIcon className={styles.svg} />
+					<ReactIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'React',
@@ -105,7 +105,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<NextJSIcon className={styles.svg} />
+					<NextJSIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'NextJS',
@@ -116,7 +116,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<AxiosIcon className={styles.svg} />
+					<AxiosIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'Axios',
@@ -127,7 +127,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<TailWindIcon className={styles.svg} />
+					<TailWindIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'TailwindCSS',
@@ -136,7 +136,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<PostCSSIcon className={styles.svg} />
+					<PostCSSIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'PostCSS',
@@ -145,7 +145,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<ReactQueryIcon className={styles.svg} />
+					<ReactQueryIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'TanstackQuery(ReactQuery) v3~5',
@@ -173,7 +173,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<RecoilIcon className={styles.svg} />
+					<RecoilIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'Recoil',
@@ -184,7 +184,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<ReduxIcon className={styles.svg} />
+					<ReduxIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'Redux',
@@ -194,7 +194,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<ReactRouterIcon className={styles.svg} />
+					<ReactRouterIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'React-Router-Dom v6',
@@ -203,7 +203,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<JestIcon className={styles.svg} />
+					<JestIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'Jest',
@@ -212,7 +212,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<TestingLibraryIcon className={styles.svg} />
+					<TestingLibraryIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'React-Testing-Libary',
@@ -223,7 +223,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<PlaywrightIcon className={styles.svg} />
+					<PlaywrightIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'PlayWright',
@@ -236,7 +236,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<ExpressIcon className={styles.svg} />
+					<ExpressIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'Express',
@@ -246,7 +246,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<SpringIcon className={styles.svg} />
+					<SpringIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'Spring-Boot',
@@ -258,7 +258,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<MysqlIcon className={styles.svg} />
+					<MysqlIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'Mysql',
@@ -270,7 +270,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<AwsEc2Icon className={styles.svg} />
+					<AwsEc2Icon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'AWS-EC2',
@@ -280,7 +280,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<AwsS3Icon className={styles.svg} />
+					<AwsS3Icon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'AWS-S3',
@@ -290,7 +290,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<DockerIcon className={styles.svg} />
+					<DockerIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'Docker',
@@ -300,7 +300,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<GitIcon className={styles.svg} />
+					<GitIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'Git',
@@ -310,7 +310,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<GithubIcon className={styles.svg} />
+					<GithubIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'Github',
@@ -320,7 +320,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<Gitlab className={styles.svg} />
+					<Gitlab className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'Gitlab',
@@ -330,7 +330,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<NetilifyIcon className={styles.svg} />
+					<NetilifyIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'Netlify',
@@ -340,7 +340,7 @@ const SkillList = [
 		{
 			SkillIcon: (
 				<IconBackground>
-					<VercelIcon className={styles.svg} />
+					<VercelIcon className={styles.svg} width="0" height="0" />
 				</IconBackground>
 			),
 			title: 'Vercel',

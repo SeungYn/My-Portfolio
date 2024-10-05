@@ -2,14 +2,18 @@
 import { GitHubIcon, GitlabIcon } from '@/components/common/icons/react-icons';
 import { FadeLeft } from '@/constant/framer-motion';
 import { Links } from '@/constant/link';
+import { useAppSelector } from '@/hooks/useReactRedux';
 import { motion } from 'framer-motion';
 
 export default function SideSocial() {
+	const isFinishMainLoading = useAppSelector(
+		(s) => s.mainLoading.isFinshLoading
+	);
 	return (
 		<motion.div
 			className="fixed bottom-0 left-[30px] z-20 w-[30px] max-lg:left-[10px] max-sm:hidden"
 			initial="init"
-			animate="on"
+			animate={isFinishMainLoading ? 'on' : 'init'}
 			variants={FadeLeft}
 		>
 			<div className="flex flex-col items-center gap-4 text-3xl [&_a:hover]:-translate-y-2">
