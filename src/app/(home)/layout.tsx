@@ -9,6 +9,8 @@ import 'prismjs/themes/prism-tomorrow.css';
 import 'katex/dist/katex.min.css';
 import Header from '@/components/header/Header';
 import { GoogleAnalytics } from '@/components/common/analytics/GoogleAnalytics';
+import MainLoading from '@/components/loading/MainLoading';
+import StoreProvider from '@/hoc/StoreProvider';
 
 const nanum = Nanum_Gothic({
 	subsets: ['latin'],
@@ -48,11 +50,15 @@ export default function RootLayout({
 	return (
 		<html lang="ko">
 			<body
-				className={`${nanum.className} w-screen overflow-x-hidden bg-navy text-slate `}
+				className={`${nanum.className} w-screen  overflow-x-hidden bg-navy text-slate `}
+				style={{ overflowY: 'auto' }}
 			>
-				<GoogleAnalytics />
-				<Header />
-				{children}
+				<StoreProvider>
+					<GoogleAnalytics />
+					<MainLoading />
+					<Header />
+					{children}
+				</StoreProvider>
 			</body>
 		</html>
 	);
