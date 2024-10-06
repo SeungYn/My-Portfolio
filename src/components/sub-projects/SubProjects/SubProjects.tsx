@@ -17,6 +17,34 @@ const SUB_PROJECTS: SubProject[] = [
 	{
 		title: (
 			<a
+				href="https://github.com/SeungYn/musinsa-crawling"
+				target="_blank"
+				className="static before:absolute before:left-0 before:top-0 before:z-0 before:h-full before:w-full before:content-['']"
+			>
+				무신사 크롤링
+			</a>
+		),
+		links: { git: 'https://github.com/SeungYn/musinsa-crawling' },
+		description: `무신사 크롤링입니다. playwright를 사용해 구현했습니다.`,
+		skills: ['Javascript', 'Playwright'],
+	},
+	{
+		title: (
+			<a
+				href="https://faker-tau.vercel.app/"
+				target="_blank"
+				className="static before:absolute before:left-0 before:top-0 before:z-0 before:h-full before:w-full before:content-['']"
+			>
+				페이커 페이지
+			</a>
+		),
+		links: { git: 'https://github.com/SeungYn/faker' },
+		description: `페이커 헌정 기념 스크롤 인터랙션 페이지`,
+		skills: ['Javascript', 'canvas', 'Vercel'],
+	},
+	{
+		title: (
+			<a
 				href="/"
 				target="_blank"
 				className="static before:absolute before:left-0 before:top-0 before:z-0 before:h-full before:w-full before:content-['']"
