@@ -8,6 +8,50 @@ import { SectionID } from '@/constant/sectionId';
 
 const PROJECT_DATA: Project[] = [
 	{
+		title: '하얼남',
+		date: '2024.06 ~ 2024.07',
+		serviceMaintain: '',
+		description: `자신의 하루를 어떻게 사용했는지 시각화하여 볼 수 있게 해주는 타이머 서비스입니다. 
+		Nextjs로 만든 프로젝트이며, PWA를 활용해 앱을 사용하는 듯한 사용자 경험을 제공해줍니다. 
+		Nextjs로 만든 프로젝트이며, ec2서버를 사용해서 배포했습니다.
+    `,
+		skillList: [
+			'React',
+			'NextJS v14',
+			'PWA',
+			'TailwindCSS',
+			'React-Query v4',
+			'Zustand',
+			'Nginx',
+			'Docker',
+			'Github',
+			'Express',
+			'Prisma',
+			'Typescript',
+		],
+		linkList: (
+			<>
+				<Link href={'https://github.com/SeungYn/haalnam'} target="_blank">
+					<GitHubIcon size={20} />
+				</Link>
+				<Link href={'https://haalnam.site'} target="_blank">
+					<ShareIcon size={20} />
+				</Link>
+			</>
+		),
+
+		ImgComponent: (
+			<Link href={'https://haalnam.site'} target="_blank" className="relative">
+				<Image
+					src="/assets/project-images/haalnam-main.png"
+					fill
+					alt="이미지"
+				/>
+			</Link>
+		),
+		detailSrc: '/notion/1035be869c5280f59691d6f57840658d',
+	},
+	{
 		title: 'Emmerce',
 		date: '2023.10.16 ~ 2024.01.05',
 		serviceMaintain: '',
