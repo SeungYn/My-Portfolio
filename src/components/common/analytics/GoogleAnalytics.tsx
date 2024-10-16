@@ -13,6 +13,10 @@ export function GoogleAnalytics() {
 			</noscript>
 			{/* <!-- End Google Tag Manager (noscript) --> */}
 			{/* <!-- Google Tag Manager --> */}
+			<Script
+				src={`https://www.googletagmanager.com/gtag/js?id=${process.env.G_ID}`}
+				strategy="afterInteractive"
+			/>
 			<Script id="" strategy="lazyOnload">{`
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
