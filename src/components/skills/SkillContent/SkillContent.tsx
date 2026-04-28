@@ -4,42 +4,42 @@ import IconBackground from '@/components/common/icons/IconBackground/IconBackgro
 import Image from 'next/image';
 
 //language svg
-import CSSIcon from '/public/assets/skills/icons/language/css-3.svg';
-import HTMLIcon from '/public/assets/skills/icons/language/html-5.svg';
-import JAVAIcon from '/public/assets/skills/icons/language/java.svg';
-import JavscriptIcon from '/public/assets/skills/icons/language/javascript.svg';
-import TypescriptIcon from '/public/assets/skills/icons/language/typescript-icon.svg';
+import CSSIcon from '../../../../public/assets/skills/icons/language/css-3.svg';
+import HTMLIcon from '../../../../public/assets/skills/icons/language/html-5.svg';
+import JAVAIcon from '../../../../public/assets/skills/icons/language/java.svg';
+import JavscriptIcon from '../../../../public/assets/skills/icons/language/javascript.svg';
+import TypescriptIcon from '../../../../public/assets/skills/icons/language/typescript-icon.svg';
 
 //front svg
-import AxiosIcon from '/public/assets/skills/icons/front/axios.svg';
-import ReactIcon from '/public/assets/skills/icons/front/react.svg';
-import NextJSIcon from '/public/assets/skills/icons/front/nextjs-icon.svg';
-import PlaywrightIcon from '/public/assets/skills/icons/front/playwright.svg';
-import PostCSSIcon from '/public/assets/skills/icons/front/postcss.svg';
-import ReactQueryIcon from '/public/assets/skills/icons/front/react-query-icon.svg';
-import ReactRouterIcon from '/public/assets/skills/icons/front/react-router.svg';
-import RecoilIcon from '/public/assets/skills/icons/front/recoil-icon.svg';
-import ReduxIcon from '/public/assets/skills/icons/front/redux.svg';
-import JestIcon from '/public/assets/skills/icons/front/jest.svg';
-import TestingLibraryIcon from '/public/assets/skills/icons/front/testing-library.svg';
-import TailWindIcon from '/public/assets/skills/icons/front/tailwindcss-icon.svg';
+import AxiosIcon from '../../../../public/assets/skills/icons/front/axios.svg';
+import ReactIcon from '../../../../public/assets/skills/icons/front/react.svg';
+import NextJSIcon from '../../../../public/assets/skills/icons/front/nextjs-icon.svg';
+import PlaywrightIcon from '../../../../public/assets/skills/icons/front/playwright.svg';
+import PostCSSIcon from '../../../../public/assets/skills/icons/front/postcss.svg';
+import ReactQueryIcon from '../../../../public/assets/skills/icons/front/react-query-icon.svg';
+import ReactRouterIcon from '../../../../public/assets/skills/icons/front/react-router.svg';
+import RecoilIcon from '../../../../public/assets/skills/icons/front/recoil-icon.svg';
+import ReduxIcon from '../../../../public/assets/skills/icons/front/redux.svg';
+import JestIcon from '../../../../public/assets/skills/icons/front/jest.svg';
+import TestingLibraryIcon from '../../../../public/assets/skills/icons/front/testing-library.svg';
+import TailWindIcon from '../../../../public/assets/skills/icons/front/tailwindcss-icon.svg';
 
 //back svg
-import SpringIcon from '/public/assets/skills/icons/back/spring-icon.svg';
-import ExpressIcon from '/public/assets/skills/icons/back/express.svg';
+import SpringIcon from '../../../../public/assets/skills/icons/back/spring-icon.svg';
+import ExpressIcon from '../../../../public/assets/skills/icons/back/express.svg';
 
 //database svg
-import MysqlIcon from '/public/assets/skills/icons/database/mysql-icon.svg';
+import MysqlIcon from '../../../../public/assets/skills/icons/database/mysql-icon.svg';
 
 //etc svg
-import AwsEc2Icon from '/public/assets/skills/icons/etc/aws-ec2.svg';
-import AwsS3Icon from '/public/assets/skills/icons/etc/aws-s3.svg';
-import DockerIcon from '/public/assets/skills/icons/etc/docker-icon.svg';
-import GitIcon from '/public/assets/skills/icons/etc/git-icon.svg';
-import GithubIcon from '/public/assets/skills/icons/etc/github-octocat.svg';
-import Gitlab from '/public/assets/skills/icons/etc/gitlab.svg';
-import NetilifyIcon from '/public/assets/skills/icons/etc/netlify-icon.svg';
-import VercelIcon from '/public/assets/skills/icons/etc/vercel-icon.svg';
+import AwsEc2Icon from '../../../../public/assets/skills/icons/etc/aws-ec2.svg';
+import AwsS3Icon from '../../../../public/assets/skills/icons/etc/aws-s3.svg';
+import DockerIcon from '../../../../public/assets/skills/icons/etc/docker-icon.svg';
+import GitIcon from '../../../../public/assets/skills/icons/etc/git-icon.svg';
+import GithubIcon from '../../../../public/assets/skills/icons/etc/github-octocat.svg';
+import Gitlab from '../../../../public/assets/skills/icons/etc/gitlab.svg';
+import NetilifyIcon from '../../../../public/assets/skills/icons/etc/netlify-icon.svg';
+import VercelIcon from '../../../../public/assets/skills/icons/etc/vercel-icon.svg';
 
 const SkillList = [
 	[
@@ -161,6 +161,7 @@ const SkillList = [
 							src="/assets/skills/icons/front/zustand-icon.png"
 							fill
 							alt="zustand image"
+							sizes="(max-width: 768px) 40px, 64px"
 						/>
 					</div>
 				</IconBackground>

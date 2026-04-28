@@ -46,6 +46,7 @@ const PROJECT_DATA: Project[] = [
 					src="/assets/project-images/haalnam-main.png"
 					fill
 					alt="이미지"
+					sizes="(max-width: 768px) 100vw, 58vw"
 				/>
 			</Link>
 		),
@@ -97,6 +98,7 @@ const PROJECT_DATA: Project[] = [
 					src="/assets/project-images/emmerce-main.png"
 					fill
 					alt="이미지"
+					sizes="(max-width: 768px) 100vw, 58vw"
 				/>
 			</Link>
 		),
@@ -138,7 +140,12 @@ const PROJECT_DATA: Project[] = [
 				target="_blank"
 				className="relative"
 			>
-				<Image src="/assets/project-images/poje-main.png" fill alt="이미지" />
+				<Image
+					src="/assets/project-images/poje-main.png"
+					fill
+					alt="이미지"
+					sizes="(max-width: 768px) 100vw, 58vw"
+				/>
 			</Link>
 		),
 		detailSrc: '/notion/POJE-3928923bdf4d4037b6bc585da568208a',
@@ -191,6 +198,7 @@ const PROJECT_DATA: Project[] = [
 					src="/assets/project-images/babmate-main.png"
 					fill
 					alt="이미지"
+					sizes="(max-width: 768px) 100vw, 58vw"
 				/>
 			</Link>
 		),
@@ -228,6 +236,7 @@ const PROJECT_DATA: Project[] = [
 					src="/assets/project-images/hanshin-main.png"
 					fill
 					alt="이미지"
+					sizes="(max-width: 768px) 100vw, 58vw"
 				/>
 			</Link>
 		),

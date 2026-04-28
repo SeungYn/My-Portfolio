@@ -6,7 +6,7 @@ import {
 import { useCallback, useEffect, useRef } from "react";
 
 export default function Confeti() {
-  const refAnimationInstance = useRef<TCanvasConfettiInstance>();
+  const refAnimationInstance = useRef<TCanvasConfettiInstance | null>(null);
 
   const getInstance = useCallback(
     ({ confetti }: { confetti: TCanvasConfettiInstance }) => {
@@ -17,17 +17,16 @@ export default function Confeti() {
 
   const makeShot = useCallback(
     (particleRatio: number, opts: TCanvasConfettiAnimationOptions) => {
-      refAnimationInstance.current &&
+      if (refAnimationInstance.current) {
         refAnimationInstance.current({
           ...opts,
           origin: { y: 0.7 },
           particleCount: Math.floor(200 * particleRatio),
         });
+      }
     },
     [],
   );
-
-  useEffect(() => fire(), []);
 
   const fire = useCallback(() => {
     makeShot(0.25, {
@@ -57,6 +56,9 @@ export default function Confeti() {
       startVelocity: 45,
     });
   }, [makeShot]);
+
+  useEffect(() => fire(), [fire]);
+
   return (
     <ReactCanvasConfetti
       onInit={getInstance}
