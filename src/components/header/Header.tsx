@@ -61,21 +61,27 @@ export default function Header() {
 							<p>About</p>
 						</motion.li>
 					</Link>
-					<Link href={`/#${SectionID.skills}`}>
+					<Link href={`/#${SectionID.experience}`}>
 						<motion.li variants={FadeDown} custom={1}>
 							<span>02.</span>
+							<p>Experience</p>
+						</motion.li>
+					</Link>
+					<Link href={`/#${SectionID.skills}`}>
+						<motion.li variants={FadeDown} custom={2}>
+							<span>03.</span>
 							<p>Skills</p>
 						</motion.li>
 					</Link>
 					<Link href={`/#${SectionID.mainProjects}`}>
-						<motion.li variants={FadeDown} custom={2}>
-							<span>03.</span>
+						<motion.li variants={FadeDown} custom={3}>
+							<span>04.</span>
 							<p>Projects</p>
 						</motion.li>
 					</Link>
 					<Link href={`/#${SectionID.contact}`}>
-						<motion.li variants={FadeDown} custom={3}>
-							<span>04.</span>
+						<motion.li variants={FadeDown} custom={4}>
+							<span>05.</span>
 							<p>Contact</p>
 						</motion.li>
 					</Link>

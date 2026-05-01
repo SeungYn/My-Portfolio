@@ -1,6 +1,7 @@
 import Introduce from '@/components/Introduce/Introduce';
 import AboutMe from '@/components/aboutme/AboutMe/AboutMe';
 import Contact from '@/components/contact/Contact/Contact';
+import Experience from '@/components/experience/Experience/Experience';
 import MainProjects from '@/components/main-projects/MainProjects/MainProjects';
 import SideEmail from '@/components/side/SideEmail/SideEmail';
 import SideSocial from '@/components/side/SideSocial/SideSocial';
@@ -15,6 +16,7 @@ export default function Home() {
 				<div className=" mx-auto max-w-[1000px]">
 					<Introduce />
 					<AboutMe />
+					<Experience />
 					<Skills />
 					<MainProjects />
 					<SubProjects />

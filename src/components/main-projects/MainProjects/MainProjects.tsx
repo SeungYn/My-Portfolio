@@ -248,7 +248,7 @@ export default function MainProjects() {
 	return (
 		<SectionContainer
 			title="Main Projects"
-			count="03."
+			count="04."
 			id={SectionID.mainProjects}
 		>
 			{PROJECT_DATA.map((pro, i) => (

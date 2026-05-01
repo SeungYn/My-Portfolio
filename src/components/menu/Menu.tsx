@@ -75,11 +75,20 @@ export default function Menu() {
 							</li>
 						</Link>
 						<Link
-							href={`/#${SectionID.skills}`}
+							href={`/#${SectionID.experience}`}
 							onClick={() => setIsOpen(false)}
 						>
 							<li className="flex flex-col items-center px-8 py-4">
 								<span className="text-green">02.</span>
+								<p>Experience</p>
+							</li>
+						</Link>
+						<Link
+							href={`/#${SectionID.skills}`}
+							onClick={() => setIsOpen(false)}
+						>
+							<li className="flex flex-col items-center px-8 py-4">
+								<span className="text-green">03.</span>
 								<p>Skills</p>
 							</li>
 						</Link>
@@ -88,7 +97,7 @@ export default function Menu() {
 							onClick={() => setIsOpen(false)}
 						>
 							<li className="flex flex-col items-center px-8 py-4">
-								<span className="text-green">03.</span>
+								<span className="text-green">04.</span>
 								<p>Projects</p>
 							</li>
 						</Link>
@@ -97,7 +106,7 @@ export default function Menu() {
 							onClick={() => setIsOpen(false)}
 						>
 							<li className="flex flex-col items-center px-8 py-4">
-								<span className="text-green">04.</span>
+								<span className="text-green">05.</span>
 								<p>Contact</p>
 							</li>
 						</Link>

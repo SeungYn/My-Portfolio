@@ -21,7 +21,7 @@ export default function Skills() {
 	return (
 		<SectionContainer
 			title="Skills"
-			count="02."
+			count="03."
 			className="mx-0 min-h-[500px] md:mx-6"
 			id={SectionID.skills}
 		>
