@@ -10,6 +10,8 @@ const INTRO_DURATION = 2000;
 const REDUCED_MOTION_DURATION = 1200;
 const COLORS = ['#64ffda', '#57cbff', '#f57dff', '#e6f1ff'] as const;
 
+// Canvas에서 매 프레임 이동/렌더링할 기본 입자 정보입니다.
+// 위치(x/y), 속도(vx/vy), 투명도(alpha), trail 길이를 조합해 별가루와 꼬리 효과를 만듭니다.
 type Particle = {
 	x: number;
 	y: number;
@@ -23,6 +25,8 @@ type Particle = {
 	startAt: number;
 };
 
+// 시작 지점이 원 둘레에 있는 입자입니다.
+// 중앙의 링이 터지듯 바깥으로 확산되는 연출에 사용합니다.
 type RingParticle = Particle & {
 	angle: number;
 	baseRadius: number;
@@ -44,6 +48,7 @@ const easeInOutSine = (value: number) => {
 	return -(Math.cos(Math.PI * value) - 1) / 2;
 };
 
+// CSS 크기와 실제 픽셀 크기를 분리해 DPR이 높은 화면에서도 canvas가 흐려지지 않게 합니다.
 const initCanvas = (canvas: HTMLCanvasElement) => {
 	const ctx = canvas.getContext('2d');
 
@@ -65,6 +70,8 @@ const initCanvas = (canvas: HTMLCanvasElement) => {
 	return { ctx, width, height };
 };
 
+// 화면 전체에 흩어진 작은 별가루 입자입니다.
+// 느리게 사선 이동하며 배경의 우주감을 담당합니다.
 const createDustParticles = (width: number, height: number, count: number) => {
 	return Array.from({ length: count }, (_, index): Particle => {
 		const drift = randomNumBetween(0.08, 0.55);
@@ -85,6 +92,8 @@ const createDustParticles = (width: number, height: number, count: number) => {
 	});
 };
 
+// 중앙 원 둘레에 입자를 배치한 뒤 바깥 방향 속도를 줍니다.
+// 인트로 중반에 링이 폭발하듯 퍼지는 핵심 모션입니다.
 const createRingParticles = (width: number, height: number, count: number) => {
 	const centerX = width / 2;
 	const centerY = height / 2;
@@ -118,6 +127,8 @@ const createRingParticles = (width: number, height: number, count: number) => {
 	});
 };
 
+// 매 프레임 canvas를 덮는 기본 배경입니다.
+// 중앙은 살짝 밝고 가장자리는 더 어두운 radial gradient로 깊이감을 만듭니다.
 const drawBackground = (
 	ctx: CanvasRenderingContext2D,
 	width: number,
@@ -141,6 +152,8 @@ const drawBackground = (
 	ctx.fillRect(0, 0, width, height);
 };
 
+// 이미지 없이 큰 타원형 radial gradient를 겹쳐 오로라 느낌을 만듭니다.
+// screen 합성 모드를 써서 navy 배경 위에 빛만 얹히도록 처리합니다.
 const drawAurora = (
 	ctx: CanvasRenderingContext2D,
 	width: number,
@@ -184,6 +197,8 @@ const drawAurora = (
 	ctx.restore();
 };
 
+// 입자 하나를 trail 선과 점으로 그립니다.
+// startAt으로 입자별 등장 타이밍을 늦춰 한 번에 모두 튀어나오지 않게 합니다.
 const drawParticle = (
 	ctx: CanvasRenderingContext2D,
 	particle: Particle,
@@ -227,6 +242,8 @@ const drawParticle = (
 	ctx.restore();
 };
 
+// 입자의 위치를 속도만큼 이동시키고 속도를 조금씩 감쇠합니다.
+// 빠르게 퍼진 뒤 부드럽게 느려지는 느낌을 만들기 위한 물리 흉내입니다.
 const updateParticle = (particle: Particle, deltaRatio: number) => {
 	particle.x += particle.vx * deltaRatio;
 	particle.y += particle.vy * deltaRatio;
@@ -234,6 +251,8 @@ const updateParticle = (particle: Particle, deltaRatio: number) => {
 	particle.vy *= Math.pow(particle.decay, deltaRatio);
 };
 
+// 중앙 링의 선형 코어입니다.
+// 파티클이 생기기 전후로 시선을 가운데에 잡아주는 역할을 합니다.
 const drawRingCore = (
 	ctx: CanvasRenderingContext2D,
 	width: number,
@@ -277,6 +296,7 @@ const MainLoading = () => {
 	const dispatch = useAppDispatch();
 
 	useEffect(() => {
+		// 이 컴포넌트는 클라이언트 전용이라 window/canvas API를 effect 안에서 초기화합니다.
 		const canvas = canvasRef.current;
 
 		if (!canvas) {
@@ -296,6 +316,7 @@ const MainLoading = () => {
 			return;
 		}
 
+		// 모바일에서는 입자 수를 줄여 첫 진입 시 버벅임을 줄입니다.
 		let dustParticles = createDustParticles(
 			canvasState.width,
 			canvasState.height,
@@ -310,6 +331,7 @@ const MainLoading = () => {
 		const startedAt = then;
 		let isEnded = false;
 
+		// 화면 크기가 바뀌면 canvas 픽셀 크기와 입자 배치를 다시 계산합니다.
 		const handleResize = () => {
 			canvasState = initCanvas(canvas);
 
@@ -329,6 +351,7 @@ const MainLoading = () => {
 			);
 		};
 
+		// Redux 로딩 상태를 종료해서 Header/Introduce의 기존 등장 애니메이션이 시작되게 합니다.
 		const finishLoading = () => {
 			if (isEnded) {
 				return;
@@ -338,6 +361,8 @@ const MainLoading = () => {
 			dispatch(mainLoadingActions.onEndLoading());
 		};
 
+		// 모든 시각 효과는 elapsed time 기반 progress(0~1)에 맞춰 그립니다.
+		// 프레임 드랍이 있어도 전체 재생 시간은 크게 늘어나지 않습니다.
 		const renderFrame = (now: number) => {
 			if (!canvasState || isEnded) {
 				return;
@@ -358,6 +383,8 @@ const MainLoading = () => {
 				easeOutCubic(typingProgress) * INTRO_TEXT.length
 			);
 
+			// 문자열을 앞에서부터 잘라 보여주며 타이핑 효과를 만듭니다.
+			// index가 바뀔 때만 setState를 호출해 불필요한 React 렌더를 줄입니다.
 			if (lastTextIndexRef.current !== textIndex) {
 				lastTextIndexRef.current = textIndex;
 				setTypedText(INTRO_TEXT.slice(0, textIndex));
@@ -373,6 +400,7 @@ const MainLoading = () => {
 			ctx.clearRect(0, 0, width, height);
 			drawBackground(ctx, width, height, progress);
 
+			// 모션 감소 설정 사용자에게는 강한 파티클/오로라 모션을 생략합니다.
 			if (!prefersReducedMotion) {
 				drawAurora(ctx, width, height, progress);
 				drawRingCore(ctx, width, height, progress);
@@ -400,6 +428,7 @@ const MainLoading = () => {
 		frameRef.current = requestAnimationFrame(renderFrame);
 
 		return () => {
+			// route 전환이나 상태 변경으로 언마운트될 때 RAF와 이벤트를 정리합니다.
 			isEnded = true;
 			window.removeEventListener('resize', handleResize);
 
