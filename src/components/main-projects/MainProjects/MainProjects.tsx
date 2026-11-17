@@ -6,6 +6,8 @@ import MainProject from '../MainProject/MainProject';
 import { Project } from '@/types';
 import { SectionID } from '@/constant/sectionId';
 
+const HAALNAM_URL = 'https://haalnam.vercel.app/';
+
 const PROJECT_DATA: Project[] = [
 	{
 		title: '하얼남',
@@ -34,18 +36,18 @@ const PROJECT_DATA: Project[] = [
 				<Link href={'https://github.com/SeungYn/haalnam'} target="_blank">
 					<GitHubIcon size={20} />
 				</Link>
-				<Link href={'https://haalnam.site'} target="_blank">
+				<Link href={HAALNAM_URL} target="_blank" aria-label="하얼남 서비스 열기">
 					<ShareIcon size={20} />
 				</Link>
 			</>
 		),
 
 		ImgComponent: (
-			<Link href={'https://haalnam.site'} target="_blank" className="relative">
+			<Link href={HAALNAM_URL} target="_blank" className="relative">
 				<Image
 					src="/assets/project-images/haalnam-main.png"
 					fill
-					alt="이미지"
+					alt="하얼남 서비스 화면"
 					sizes="(max-width: 768px) 100vw, 58vw"
 				/>
 			</Link>
