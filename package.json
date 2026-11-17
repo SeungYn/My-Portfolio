@@ -4,6 +4,9 @@
 	"version": "0.1.0",
 	"author": "seungyn kwls0407@gmail.com",
 	"private": true,
+	"engines": {
+		"node": "22.x"
+	},
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
